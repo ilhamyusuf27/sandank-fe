@@ -1,0 +1,36 @@
+.navbarContainer{
+  box-shadow: 0px 6px 40px rgba(173, 173, 173, 0.25);
+}
+
+.containerSearch{
+  width: 50%;
+}
+
+.searchBar{
+  width: 100%;
+  border: 1px solid var(--color-5) ;
+  border-radius: 1rem;
+  padding: 4px 20px;
+}
+
+.search, .search:focus, .search:active, .search:focus-visible, .search:target, .search:hover{
+  width: 97%;
+  border: none;
+  outline-offset: none;
+  outline: none;
+}
+
+.buttonFilter{
+  margin-left: 1rem;
+  outline: none;
+  border: 1px solid var(--color-5);
+  padding: .25rem .5rem;
+  border-radius: .5rem;
+  background-color: white;
+}
+
+.iconContainer{
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+}

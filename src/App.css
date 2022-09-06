@@ -36,3 +36,81 @@
     transform: rotate(360deg);
   }
 }
+
+.textLogo{
+  margin-bottom: 0;
+  margin-left: 5%;
+
+  color: var(--color-2);
+}
+
+.form {
+  width: 28%;
+}
+
+.input{
+  width: 100%;
+  height: 48px;
+  border: 1px solid #9B9B9B;
+  filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+  border-radius: 4px;
+  padding-left: 1rem;
+}
+
+.submitButton{
+  width: 100%;
+  height: 48px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: var(--color-2);
+  color: var(--color-1);
+  border: none;
+  border-radius: 25px;
+}
+
+.submitButton:hover{
+  background-color: var(--color-1);
+  color: var(--color-2);
+  border: 2px solid var(--color-2);
+
+}
+
+.buttonCustommer, .buttonSeller{
+  width: 123px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.buttonCustommer{
+  border-radius: 4px 0 0 4px;
+}
+
+.buttonSeller{
+  border-radius: 0 4px 4px 0;
+}
+
+.isActive{
+  background-color: var(--color-2);
+  color: var(--color-1);
+}
+
+.notActive{
+  color: var(--color-3);
+  border: 1px solid var(--color-3);
+}
+
+.containerLink{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 1rem;
+}
+
+.link{
+  text-decoration: none;
+  color: var(--color-2);
+}
+
