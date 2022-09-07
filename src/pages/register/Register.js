@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Mollecule
-import Logo from "../../component/mollecule/Logo";
+import Logo from "../../component/mollecule/LogoAuth";
 import FormLogin from "../../component/mollecule/FormLogin";
 
 // CSS

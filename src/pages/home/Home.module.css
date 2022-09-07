@@ -1,0 +1,135 @@
+.sectionContainer{
+  padding-top: 2rem;
+}
+
+.trend :global .slick-slider .slick-dots{
+  display: flex !important;
+}
+
+.trend :global .slick-slider .slick-dots li button:before {
+  font-size: 10px !important;
+}
+
+.cardSlide{
+  padding: 0 15px;
+  width: 456px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.cardContent{
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.cardContent h5{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--color-1);
+}
+.cardContent img{
+  object-fit: cover;
+}
+
+.category{
+  background-color: #F0F1F9;
+  padding: 50px 0 60px 0;
+}
+
+.cardCategory{
+  width: 206px;
+  height: 220px;
+  padding: 0 15px;
+}
+
+.cardCategoryContent{
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  border-radius: 15px
+}
+
+.categorySlider :global .slick-dots li.slick-active button:before{
+  color: var(--color-2);
+}
+
+.categorySlider :global .slick-dots button:before{
+  font-size: 10px;
+}
+
+.categorySlider :global .buttonSlider{
+  top:55%;
+}
+.categorySlider :global .prev{
+  left:-34%;
+}
+.categorySlider :global .next{
+  left:-25%;
+}
+
+.categorySlider :global .slick-dots{
+  text-align: start;
+  left: 30%;
+}
+
+.itemContainer{
+  padding-top: 50px;
+}
+
+.itemContent{
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+.itemCard{
+  width: 208px;
+  height: 278px;
+  box-shadow: 0px 0px 14px rgba(173, 173, 173, 0.25);
+  overflow: hidden;
+  border-radius: 8px;
+  flex: 0 1 calc(20% - 8px);
+  margin: 4px;
+  cursor: pointer;
+  /* background-color: black; */
+}
+
+.itemCard .cardImage{
+  width: 100%;
+  height: 136px;
+  object-fit: cover;
+}
+.cardDesc{
+  width: 100%;
+  height: 100%;
+  padding: 10px 15px 21px 15px;
+
+}
+
+.cardDesc h6{
+  font-weight: 600 !important;
+}
+.cardDesc span{
+  font-weight: 600 !important;
+  color: var(--color-2);
+}
+.cardDesc p{
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 12px;
+  margin-top: 6px;
+  margin-bottom: 11px;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+}

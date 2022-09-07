@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Mollecule
-import Logo from "../../component/mollecule/Logo";
+import LogoAuth from "../../component/mollecule/LogoAuth";
 import FormReset from "../../component/mollecule/FormReset";
 
 // CSS
@@ -11,7 +11,7 @@ import style from "./Reset.module.css";
 function Reset() {
 	return (
 		<div className={`${style.container}`}>
-			<Logo />
+			<LogoAuth />
 			<h4 className="mt-4 mb-5">Reset Password</h4>
 			<FormReset />
 			<span>
