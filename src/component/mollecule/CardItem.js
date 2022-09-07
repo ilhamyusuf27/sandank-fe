@@ -21,7 +21,7 @@ function CardItem() {
 				<p className="text-secondary">Zalora Cloth</p>
 				<div className={style.rating}>
 					{[...new Array(5)].map(() => (
-						<BsFillStarFill />
+						<BsFillStarFill color="#FFBA49" />
 					))}{" "}
 					<p className="mb-0 mt-0 ms-1 text-secondary">(10)</p>
 				</div>

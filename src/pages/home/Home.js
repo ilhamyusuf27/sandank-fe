@@ -3,6 +3,13 @@ import MainLayout from "../../layout/MainLayout";
 
 // images
 import Slider1 from "../../asset/images/slider1.png";
+import tshirt from "../../asset/images/tshirt.png";
+import shorts from "../../asset/images/short.png";
+import jacket from "../../asset/images/jacket.png";
+import pants from "../../asset/images/pants.png";
+import socks from "../../asset/images/socks.png";
+import glasses from "../../asset/images/glasses.png";
+import cap from "../../asset/images/cap.png";
 
 // React Slick
 import Slider from "react-slick";
@@ -19,10 +26,14 @@ import CardItem from "../../component/mollecule/CardItem";
 import Title from "../../component/atom/Title";
 
 function Home() {
+	const apparel = [tshirt, shorts, jacket, pants, socks, glasses, cap];
+
 	const settings = {
 		dots: true,
 		infinite: true,
 		centerMode: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
 		centerPadding: "20%",
 		speed: 500,
 		slidesToShow: 2,
@@ -101,7 +112,7 @@ function Home() {
 				<section className={style.sectionContainer}>
 					{/* Slider */}
 					<div className="container">
-						<div className={`mb-5 ${style.trend}`}>
+						<div className={`${style.trend}`}>
 							<Slider {...settings}>
 								{[...new Array(5)].map(() => (
 									<div className={style.cardSlide}>
@@ -126,9 +137,11 @@ function Home() {
 								<div className="col-9">
 									<div className={style.categorySlider}>
 										<Slider {...category}>
-											{[...new Array(6)].map(() => (
+											{apparel.map((item) => (
 												<div className={style.cardCategory}>
-													<div className={style.cardCategoryContent}></div>
+													<div className={style.cardCategoryContent}>
+														<img src={item} width="100%" height="100%" alt="category" />
+													</div>
 												</div>
 											))}
 										</Slider>
@@ -138,7 +151,7 @@ function Home() {
 						</div>
 					</div>
 
-					<div className="container">
+					<div className="container pb-5">
 						{/* New Product */}
 						<div className={style.itemContainer}>
 							<Title title="New" desc="You’ve never seen it before!" />
