@@ -7,6 +7,7 @@ import Register from "./pages/register/Register";
 import Reset from "./pages/reset/Reset";
 import ResetPassword from "./pages/resetPassword/ResetPassword";
 import Home from "./pages/home/Home";
+import MyBag from "./pages/my-bag/MyBag";
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 					<Route path={"/register"} element={<Register />} />
 					<Route path={"/reset"} element={<Reset />} />
 					<Route path={"/reset-password"} element={<ResetPassword />} />
+					<Route path={"/my-bag"} element={<MyBag />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

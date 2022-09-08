@@ -301,3 +301,39 @@ h1,h2,h3,h4,h5,h6{
 .disable{
   opacity: .6;
 }
+
+.checkbox:focus{
+  border-color: var(--color-4) !important;
+  box-shadow: none !important;
+}
+
+.checkbox:checked{
+  background-color: var(--color-2) !important;
+  border-color: var(--color-2) !important;
+}
+
+.minus, .plus{
+  width: 36px;
+  height: 36px;
+  background-color: var(--color-1);
+  box-shadow: 0px 0px 4px rgba(142, 142, 142, 0.25);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 17px;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.minus:hover, .plus:hover{
+  background-color: rgb(225, 225, 225);
+
+}
+
+.counterDisable{
+  background-color: #D5D5D5 !important;
+  color: var(--color-1) !important;
+  cursor: not-allowed;
+
+}
