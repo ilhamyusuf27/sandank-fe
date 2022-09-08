@@ -7,6 +7,7 @@ import style from "./MyBag.module.css";
 import MainLayout from "../../layout/MainLayout";
 import Counter from "../../component/mollecule/Counter";
 import TitlePage from "../../component/atom/TitlePage";
+import { Link } from "react-router-dom";
 
 function MyBag() {
 	return (
@@ -54,9 +55,11 @@ function MyBag() {
 									<h5 className="text-secondary mb-0">Total price</h5>
 									<h5 className="mb-0">$40.0</h5>
 								</div>
-								<button type="button" className="btn btn-primary btn-modal w-100">
-									Buy
-								</button>
+								<Link to="/checkout">
+									<button type="button" className="btn btn-primary btn-modal w-100">
+										Buy
+									</button>
+								</Link>
 							</div>
 						</div>
 					</div>

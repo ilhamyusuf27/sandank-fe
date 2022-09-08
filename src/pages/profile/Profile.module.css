@@ -1,0 +1,82 @@
+.containerProfile{
+  width: 100vw;
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+}
+.menu{
+  margin-left: auto;
+  background-color: var(--color-1);
+  padding-top: 8rem;
+  overflow-x: hidden;
+  width: 33vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.listMenu{
+  width: 50%;
+  position: absolute;
+  right:0;
+}
+
+
+
+.action{
+  background-color: var(--color-6);
+  width: 100%;
+  overflow-x: hidden;
+  height: 100vh;
+  padding-left: 38%;
+  padding-top: 7%;
+}
+
+.textLink{
+  font-weight: 500;
+  color: var(--color-3);
+}
+
+.textLink:hover{
+  color: var(--color-4);
+}
+
+.actived{
+  color:var(--color-4) !important;
+}
+
+.formMenu{
+  width: 850px;
+  height: 636px;
+  background-color: var(--color-1);
+  border-radius: 8px;
+  border: 1px solid var(--color-4);
+  padding: 30px;
+}
+
+.inputTitle{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-3);
+}
+
+.formTitle{
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--color-3);
+}
+
+.upload{
+  width: 100%;
+  border-left: 1px solid var(--color-3);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upload img{
+  width: 110px;
+  height: auto;
+}
