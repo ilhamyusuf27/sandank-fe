@@ -30,7 +30,9 @@ function Navbar() {
 						</button>
 					</div>
 					<div className={style.iconContainer}>
-						<FiShoppingCart size={20} color="#8E8E93" />
+						<Link to="/my-bag">
+							<FiShoppingCart size={20} color="#8E8E93" />
+						</Link>
 						<FiBell size={20} color="#8E8E93" />
 						<FiMail size={20} color="#8E8E93" />
 						<FiUser size={20} color="#8E8E93" />

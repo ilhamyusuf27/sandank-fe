@@ -8,6 +8,7 @@ import Reset from "./pages/reset/Reset";
 import ResetPassword from "./pages/resetPassword/ResetPassword";
 import Home from "./pages/home/Home";
 import MyBag from "./pages/my-bag/MyBag";
+import Category from "./pages/category/Category";
 
 function App() {
 	return (
@@ -20,6 +21,7 @@ function App() {
 					<Route path={"/reset"} element={<Reset />} />
 					<Route path={"/reset-password"} element={<ResetPassword />} />
 					<Route path={"/my-bag"} element={<MyBag />} />
+					<Route path={"/category"} element={<Category />} />
 				</Route>
 			</Routes>
 		</BrowserRouter>

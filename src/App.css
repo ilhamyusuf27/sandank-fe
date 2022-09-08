@@ -2,6 +2,11 @@
   font-family: 'Montserrat';
 }
 
+a{
+  color: var(--color-4) !important;
+  text-decoration: none !important;
+}
+
 h1,h2,h3,h4,h5,h6{
   font-weight: 700 !important;
 }
@@ -44,6 +49,12 @@ h1,h2,h3,h4,h5,h6{
     transform: rotate(360deg);
   }
 }
+
+.main{
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+}
+
 
 .logo{
   width: 25px;
@@ -336,4 +347,13 @@ h1,h2,h3,h4,h5,h6{
   color: var(--color-1) !important;
   cursor: not-allowed;
 
+}
+
+.mainBreadcrumb{
+  --bs-breadcrumb-divider: ">";
+  margin-bottom: 50px;
+}
+
+.titlePage{
+  margin-bottom: 30px;
 }

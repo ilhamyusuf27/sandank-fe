@@ -24,6 +24,7 @@ import PreviousButtonCategory from "../../component/atom/PreviousButtonCategory"
 import NextButtonCategory from "../../component/atom/NextButtonCategory";
 import CardItem from "../../component/mollecule/CardItem";
 import Title from "../../component/atom/Title";
+import { Link } from "react-router-dom";
 
 function Home() {
 	const apparel = [tshirt, shorts, jacket, pants, socks, glasses, cap];
@@ -139,9 +140,11 @@ function Home() {
 										<Slider {...category}>
 											{apparel.map((item) => (
 												<div className={style.cardCategory}>
-													<div className={style.cardCategoryContent}>
-														<img src={item} width="100%" height="100%" alt="category" />
-													</div>
+													<Link to="/category">
+														<div className={style.cardCategoryContent}>
+															<img src={item} width="100%" height="100%" alt="category" />
+														</div>
+													</Link>
 												</div>
 											))}
 										</Slider>
