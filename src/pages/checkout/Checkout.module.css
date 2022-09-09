@@ -113,7 +113,7 @@
 .modalHeader{
   display: flex;
   padding: 10px;
-  justify-content: end !important;
+  justify-content: flex-end !important;
 }
 
 .modalBody{
