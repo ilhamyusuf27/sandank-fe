@@ -19,7 +19,6 @@ import Counter from "../../component/mollecule/Counter";
 import Color from "../../component/mollecule/Color";
 import RatingLine from "../../component/mollecule/RatingLine";
 import CardItem from "../../component/mollecule/CardItem";
-import Title from "../../component/atom/Title";
 
 function Detail() {
 	const [mainPhoto, setMainPhoto] = React.useState(produk1);
