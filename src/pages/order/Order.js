@@ -12,10 +12,12 @@ import profile from "../../asset/images/profile.png";
 import { RiPencilFill } from "react-icons/ri";
 
 // style
-import style from "./Address.module.css";
-import ModalAddAddress from "../../component/mollecule/ModalAddAddress";
+import style from "./Order.module.css";
 
-function Address() {
+// components
+import ButtonTabs from "../../component/atom/ButtonTabs";
+
+function Order() {
 	return (
 		<>
 			<MainLayout />
@@ -45,14 +47,14 @@ function Address() {
 						<Link to="/profile/address">
 							<div className="d-flex align-items-center mb-4">
 								<img src={iconAddress} alt="address" />
-								<span className={`ms-2  ${style.textLink} ${style.actived}`}>Shipping Address</span>
+								<span className={`ms-2  ${style.textLink} `}>Shipping Address</span>
 							</div>
 						</Link>
 
 						<Link to="/profile/order">
 							<div className="d-flex align-items-center mb-4">
 								<img src={iconOrder} alt="address" />
-								<span className={`ms-2  ${style.textLink}`}>My Order</span>
+								<span className={`ms-2  ${style.textLink} ${style.actived}`}>My Order</span>
 							</div>
 						</Link>
 					</div>
@@ -60,29 +62,23 @@ function Address() {
 
 				<div className={style.action}>
 					<div className={style.formMenu}>
-						<h5>Choose another address</h5>
-						<p className={style.formTitle}>Manage your shipping address</p>
-						<hr className="mb-5" />
+						<h5>My order</h5>
 
-						<div>
-							<div className={style.addNewAddress} data-bs-toggle="modal" data-bs-target="#addModalAddress">
-								<h6 className="text-center">Add new adress</h6>
+						<nav>
+							<div className={`nav nav-tabs ${style.tabs}`} id="nav-tab" role="tablist">
+								<ButtonTabs title="All items" id="nav-all-items-tab" target="nav-all-items" actived={true} />
+								<ButtonTabs title="Not yet paid" id="nav-not-yet-tab" target="nav-not-yet" />
+								<ButtonTabs title="Packed" id="nav-packed-tab" target="nav-packed" />
+								<ButtonTabs title="Sent" id="nav-sent-tab" target="nav-sent" />
+								<ButtonTabs title="Completed" id="nav-completed-tab" target="nav-completed" />
+								<ButtonTabs title="Order cancel" id="nav-cancel-tab" target="nav-cancel" />
 							</div>
-							<div className={style.currentAddress}>
-								<h6>Andreas Jane</h6>
-								<p className="mb-4">Perumahan Sapphire Mediterania, Wiradadi, Kec. Sokaraja, Kabupaten Banyumas, Jawa Tengah, 53181 [Tokopedia Note: blok c 16] Sokaraja, Kab. Banyumas, 53181</p>
-								<h6 className={style.changeAddress} data-bs-toggle="modal" data-bs-target="#addModalAddress">
-									Change address
-								</h6>
-							</div>
-						</div>
+						</nav>
 					</div>
 				</div>
 			</div>
-
-			<ModalAddAddress />
 		</>
 	);
 }
 
-export default Address;
+export default Order;

@@ -1,0 +1,157 @@
+.title{
+  margin-bottom: 14px;
+}
+
+.textSecondary{
+  color: var(--color-3);
+}
+
+.store {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.imageProduct{
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.galery{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.rating{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.price{
+  margin-bottom: 40px;
+}
+
+.priceTitle{
+  font-weight: 500;
+font-size: 16px;
+line-height: 16px;
+}
+.add{
+  display: flex;
+  margin-bottom: 47px;
+}
+
+.color{
+  margin-bottom: 35px;
+}
+
+.checkContainer{
+  gap: .5rem;
+}
+
+.info{
+  margin-top: 60px;
+  margin-bottom: 10px;
+}
+
+.sectionTitle{
+  margin-bottom: 40px;
+}
+
+.infoDetail{
+  margin-bottom: 40px;
+}
+
+.titleInfo{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+
+.conditionDesc{
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-2);
+}
+
+.textDesc{
+  color: var(--color-3);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.mainRating{
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 60px;
+}
+
+.allRating{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--color-3);
+}
+
+.productRating{
+  display: inline-block;
+  margin-bottom: 14px;
+}
+
+.ratingProduct{
+  /* display: inline-block; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.ratingContainer{
+  width: 217px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.line{
+  border: none;
+  background-color: var(--color-2);
+  width: 100%;
+  height: 6px;
+  opacity: 1;
+  border-radius: 25px;
+  margin: 0 25px;
+}
+
+.separator{
+  margin-top: 57px;
+  margin-bottom: 50px;
+}
+
+.recomenTitle{
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 22px;
+}
+
+.recomenDesc{
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: var(--color-3);
+}
+
+.itemContent{
+  padding-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+}
+
+

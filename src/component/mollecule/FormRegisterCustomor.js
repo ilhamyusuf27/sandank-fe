@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 // Atom
 import Input from "../atom/Input";
@@ -10,7 +11,9 @@ function FormRegisterCustomor() {
 			<Input type="text" placeholder="Name" />
 			<Input type="email" placeholder="Email" />
 			<Input type="password" placeholder="Password" />
-			<SubmitButton value="REGISTER" />
+			<Link to="/login">
+				<SubmitButton value="REGISTER" />
+			</Link>
 		</form>
 	);
 }

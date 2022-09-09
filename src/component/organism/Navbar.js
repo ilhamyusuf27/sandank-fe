@@ -15,7 +15,7 @@ function Navbar() {
 			<nav className={`navbar bg-white ${style.navbarContainer}`}>
 				<div className="container">
 					<div className="containerLogo">
-						<Link to="/" className="link">
+						<Link to="/home" className="link">
 							<Logo />
 						</Link>
 					</div>
@@ -33,9 +33,15 @@ function Navbar() {
 						<Link to="/my-bag">
 							<FiShoppingCart size={20} color="#8E8E93" />
 						</Link>
-						<FiBell size={20} color="#8E8E93" />
-						<FiMail size={20} color="#8E8E93" />
-						<FiUser size={20} color="#8E8E93" />
+						<Link to="/home">
+							<FiBell size={20} color="#8E8E93" />
+						</Link>
+						<Link to="/home">
+							<FiMail size={20} color="#8E8E93" />
+						</Link>
+						<Link to="/profile">
+							<FiUser size={20} color="#8E8E93" />
+						</Link>
 					</div>
 				</div>
 			</nav>

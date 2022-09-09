@@ -42,6 +42,22 @@
   display: flex;
   justify-content: space-evenly;
 }
+.iconContainerLogin{
+  width: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+}
+
+.buttonLogin{
+  display: flex;
+  gap: 1rem;
+}
+
+.buttonAuth{
+  width: 100px !important;
+}
 
 .btnModalClose{
   box-sizing: content-box;

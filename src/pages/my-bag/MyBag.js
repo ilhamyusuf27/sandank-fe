@@ -42,7 +42,7 @@ function MyBag() {
 								</div>
 
 								<div className={style.itemQuantiti}>
-									<Counter />
+									<Counter min={1} max={30} />
 								</div>
 
 								<h5 className="mb-0">$20.0</h5>

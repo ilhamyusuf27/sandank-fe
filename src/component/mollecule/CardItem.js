@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 // images
 import cardImage from "../../asset/images/jas.png";
@@ -10,8 +11,9 @@ import style from "../../pages/home/Home.module.css";
 import { BsFillStarFill } from "react-icons/bs";
 
 function CardItem() {
+	const navigate = useNavigate();
 	return (
-		<div className={style.itemCard}>
+		<div className={style.itemCard} onClick={() => navigate("/detail")}>
 			<div className="cardImage">
 				<img src={cardImage} alt="cardImage" width={"100%"} height={"100%"} />
 			</div>

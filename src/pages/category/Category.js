@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
-import { Link } from "react-router-dom";
 import TitlePage from "../../component/atom/TitlePage";
+import Breadcrumb from "../../component/mollecule/Breadcrumb";
 import CardItem from "../../component/mollecule/CardItem";
 import MainLayout from "../../layout/MainLayout";
 
@@ -14,18 +14,7 @@ function Category() {
 			<MainLayout />
 			<div className="container">
 				{/* Breadceumb */}
-				<nav className="mainBreadcrumb" aria-label="breadcrumb">
-					<ol className="breadcrumb">
-						<li className="breadcrumb-item">
-							<Link to="/" passHref>
-								<a>Home</a>
-							</Link>
-						</li>
-						<li className="breadcrumb-item active" aria-current="page">
-							Category
-						</li>
-					</ol>
-				</nav>
+				<Breadcrumb current="T-shirt" />
 
 				<TitlePage title="T-Shirt" />
 				<div className={style.itemContent}>

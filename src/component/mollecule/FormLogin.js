@@ -15,7 +15,9 @@ function FormLogin() {
 					Forgot Password?
 				</Link>
 			</div>
-			<SubmitButton value="LOG IN" />
+			<Link to="/home">
+				<SubmitButton value="LOG IN" />
+			</Link>
 		</form>
 	);
 }

@@ -53,7 +53,7 @@ function Profile() {
 							</div>
 						</Link>
 
-						<Link to="">
+						<Link to="/profile/order">
 							<div className="d-flex align-items-center mb-4">
 								<img src={iconOrder} alt="address" />
 								<span className={`ms-2  ${style.textLink}`}>My Order</span>
